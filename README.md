@@ -6,9 +6,18 @@ A SwiftUI showcase app that brings the Dragon Ball universe to life — featurin
 
 ## Demo
 
-https://github.com/user-attachments/assets/Demo/demo.mp4
+<!--
+  To embed the video:
+  1. Go to your GitHub repo → open any Issue or PR
+  2. Drag demo.mp4 from the Demo/ folder into the comment box
+  3. GitHub will upload it and give you a URL like:
+     https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+  4. Paste that URL below and delete this comment block
+-->
 
-> If the video doesn't play inline, download it from the [`Demo/`](Demo/demo.mp4) folder.
+https://github.com/user-attachments/assets/PASTE-YOUR-ASSET-URL-HERE
+
+> Can't see the video? Download it directly: [`Demo/demo.mp4`](Demo/demo.mp4)
 
 ---
 
