@@ -2,20 +2,32 @@
 //  ContentView.swift
 //  DragonBall
 //
-//  Created by Shihab Hossain on 6/5/26.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var showSplash = true
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            NavigationStack {
+                CharacterListView()
+            }
+            .opacity(showSplash ? 0 : 1)
+
+            if showSplash {
+                SplashScreenView()
+                    .transition(.opacity)
+            }
         }
-        .padding()
+        .task {
+            // Show splash for 2.2s then crossfade into the app
+            try? await Task.sleep(for: .seconds(2.2))
+            withAnimation(.easeInOut(duration: 0.5)) {
+                showSplash = false
+            }
+        }
     }
 }
 
